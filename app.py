@@ -33,6 +33,7 @@ one possible use case for claims are access level control, which is shown below.
 #         return {'is_admin': True}
 #     return {'is_admin': False}
 
+
 api.add_resource(Store, '/store/<string:name>')
 api.add_resource(StoreList, '/stores')
 api.add_resource(Item, '/item/<string:name>')
