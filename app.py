@@ -41,6 +41,7 @@ api.add_resource(UserRegister, '/register')
 api.add_resource(User, '/user/<int:user_id>')
 api.add_resource(UserLogin, '/login')
 
+
 if __name__ == '__main__':
     db.init_app(app)
     app.run(port=5000, debug=True)
